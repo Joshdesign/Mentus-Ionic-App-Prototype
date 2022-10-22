@@ -1,0 +1,84 @@
+/* iOS places the subtitle above the title */
+
+
+:root{
+    --ion-color-primary: #6209db;
+    --ion-color-secondary: #00e59e;
+    --ion-color-dark: #272727;
+    --ion-color-medium: #f5f5f5;
+    
+}
+
+.us-bold-purpleb{
+    color: var(--ion-color-primary);
+    font-weight: 700;
+    
+}
+
+.us-purpleb{
+    color: var(--ion-color-primary);
+    font-weight: 300;
+}
+
+.paragraph{
+    text-align: center;
+    font-size: 10px;
+    font-weight: 100;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+.main.title{
+    color: white;
+}
+
+.title{
+    color: rgb(39, 39, 39);
+    text-align: center;
+}
+
+ion-card-content{
+    font-family: 'Poppins';
+    background-color: white;
+}
+
+ion-card-header.ios {
+    display: flex;
+    flex-flow: column-reverse;
+    background-color: white;
+    height: 100%;
+    font-weight: 700;
+  }
+
+
+.swiper-container{
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide{
+    text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }

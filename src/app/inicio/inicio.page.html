@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title class="title">Ment<span class="us-bold-purpleb">us</span></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark">
+  <!-- <ion-card color="dark">
+    <ion-card-header>
+      <ion-card-title class="title">Ment<span class="us-bold-purpleb">us</span></ion-card-title>
+    </ion-card-header>
+    <img alt="Silhouette of mountains" src="/assets/img/girl.png"  />
+  
+    <ion-card-content>
+      <h1 class="title">Terapias efectivas y procesos a tu ritmo</h1>
+      <p class="paragraph">Trabajaremos de la mano con cada uno de nuestros <span class="us-purpleb">us</span>arios asegurando su bienestar mental y su crecimiento personal.</p>
+    </ion-card-content>
+  </ion-card> -->
+
+  <swiper #swiper [config]="config">
+    <ng-template swiperSlide=""><ion-card color="dark">
+      <ion-card-header>
+        <ion-card-title class="title">Ment<span class="us-bold-purpleb">us</span></ion-card-title>
+      </ion-card-header>
+      <img alt="Silhouette of mountains" src="/assets/img/girl.png"  />
+    
+      <ion-card-content>
+        <h1 class="title">Terapias efectivas y procesos a tu ritmo</h1>
+        <p class="paragraph">Trabajaremos de la mano con cada uno de nuestros <span class="us-purpleb">us</span>arios asegurando su bienestar mental y su crecimiento personal.</p>
+      </ion-card-content>
+    </ion-card></ng-template>
+    <ng-template swiperSlide="">Skills</ng-template>
+    <ng-template swiperSlide="">Chat</ng-template>
+    <ng-template swiperSlide="">Types</ng-template>
+  </swiper>
+
+</ion-content>
