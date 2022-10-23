@@ -5,34 +5,98 @@
 </ion-header>
 
 <ion-content color="dark">
-  <!-- <ion-card color="dark">
-    <ion-card-header>
-      <ion-card-title class="title">Ment<span class="us-bold-purpleb">us</span></ion-card-title>
-    </ion-card-header>
-    <img alt="Silhouette of mountains" src="/assets/img/girl.png"  />
-  
-    <ion-card-content>
-      <h1 class="title">Terapias efectivas y procesos a tu ritmo</h1>
-      <p class="paragraph">Trabajaremos de la mano con cada uno de nuestros <span class="us-purpleb">us</span>arios asegurando su bienestar mental y su crecimiento personal.</p>
-    </ion-card-content>
-  </ion-card> -->
 
-  <swiper #swiper [config]="config">
-    <ng-template swiperSlide=""><ion-card color="dark">
+  <swiper #swiper [config]="config" color="dark">
+
+    <ng-template swiperSlide="">
+      
+      <ion-card color="dark">
       <ion-card-header>
-        <ion-card-title class="title">Ment<span class="us-bold-purpleb">us</span></ion-card-title>
-      </ion-card-header>
-      <img alt="Silhouette of mountains" src="/assets/img/girl.png"  />
-    
-      <ion-card-content>
         <h1 class="title">Terapias efectivas y procesos a tu ritmo</h1>
-        <p class="paragraph">Trabajaremos de la mano con cada uno de nuestros <span class="us-purpleb">us</span>arios asegurando su bienestar mental y su crecimiento personal.</p>
+      </ion-card-header>
+      <ion-card-content>
+        <p class="paragraph">Trabajaremos de la mano con cada uno de nuestros
+          <span class="us-purpleb">us</span>arios asegurando su bienestar mental y su crecimiento personal.</p>
+      </ion-card-content>
+
+      <div class="bg-img">
+        <img  alt="Silhouette of mountains" src="/assets/img/girl.png" class="images"/>
+      </div>
+      
+      <ion-card-content>
+        <ion-button class="button" shape="round" color="secondary">Comienzá ahora</ion-button>
+        <p class="paragraph">¿Deseas <span><a href="#"  class="login"> Iniciar sesión</a></span>?. <a href="#">Registrarse</a></p>
       </ion-card-content>
     </ion-card>
+
   </ng-template>
-    <ng-template swiperSlide="">Skills</ng-template>
-    <ng-template swiperSlide="">Chat</ng-template>
-    <ng-template swiperSlide="">Types</ng-template>
+
+  <ng-template swiperSlide="">
+
+    <ion-card color="dark">
+      <ion-card-header>
+        <h1 class="title">Herramientas para mejorar tu persona</h1>
+      </ion-card-header>
+      <ion-card-content>
+        <p class="paragraph">Nuestro <span class="us-purpleb">Mentors</span> te darán las herramientas que ayudaran en el proceso para mejorar tu bienestar-mental.</p>
+      </ion-card-content>
+
+      <div class="bg-img">
+        <img  alt="Silhouette of mountains" src="/assets/img/skills.png" class="images"/>
+      </div>
+      
+      <ion-card-content>
+        <ion-button class="button" shape="round" color="secondary">Comienzá ahora</ion-button>
+        <p class="paragraph">¿Deseas <span><a href="#"  class="login"> Iniciar sesión</a></span>?. <a href="#">Registrarse</a></p>
+      </ion-card-content>
+    </ion-card>
+
+  </ng-template>
+
+    <ng-template swiperSlide="">
+
+      <ion-card color="dark">
+        <ion-card-header>
+          <h1 class="title">No requieres una cita previa</h1>
+        </ion-card-header>
+        <ion-card-content>
+          <p class="paragraph">Puedes comenzar una converzación y nuestros <span class="us-purpleb">Mentors</span> te darán seguimiento. Desde mensajes de texto hasta notas de audio y/o video.</p>
+        </ion-card-content>
+  
+        <div class="bg-img">
+          <img  alt="Silhouette of mountains" src="/assets/img/chat.png" class="images"/>
+        </div>
+        
+        <ion-card-content>
+          <ion-button class="button" shape="round" color="secondary">Comienzá ahora</ion-button>
+          <p class="paragraph">¿Deseas <span><a href="#"  class="login"> Iniciar sesión</a></span>?. <a href="#">Registrarse</a></p>
+        </ion-card-content>
+      </ion-card>
+
+    </ng-template>
+
+    <ng-template swiperSlide="">
+
+      <ion-card color="dark">
+        <ion-card-header>
+          <h1 class="title">Encuentra a tu Mentor, hoy.</h1>
+        </ion-card-header>
+        <ion-card-content>
+          <p class="paragraph">Con miles de <span class="us-purpleb">Mentors</span> tendrás la oportunidad de escoger al indicado para ti y tus necesidades.</p>
+        </ion-card-content>
+  
+        <div class="bg-img">
+          <img  alt="Silhouette of mountains" src="/assets/img/types.png" class="images"/>
+        </div>
+        
+        <ion-card-content>
+          <ion-button class="button" shape="round" color="secondary">Comienzá ahora</ion-button>
+          <p class="paragraph">¿Deseas <span><a href="#"  class="login"> Iniciar sesión</a></span>?. <a href="#">Registrarse</a></p>
+        </ion-card-content>
+      </ion-card>
+
+    </ng-template>
+
   </swiper>
 
 </ion-content>
